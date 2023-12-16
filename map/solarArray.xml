@@ -1,0 +1,7 @@
+<prefab version="1.4.0">
+	<group name="instance=MOD/map/solarArray.xml" pos="0.0 1.0 0.00001" rot="0.0 0.0 0.0">
+		<vox pos="0.0 -1.0 0.0" file="MOD/map/labExterior.vox" object="&lt;solar-base&gt;" scale="2"/>
+		<vox pos="0.0 1.4 0.7" rot="-45.0 0.0 0.0" file="MOD/map/labExterior.vox" object="&lt;solar-panel&gt;" scale="2"/>
+	</group>
+</prefab>
+
