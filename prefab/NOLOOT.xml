@@ -1,0 +1,6 @@
+<prefab version="1.4.0">
+	<group name="NOLOOT" pos="0.0 -0.2 0.0">
+		<body name="NOLOOT" tags="NOSPAWNDRAGONMODLOOT" pos="0.0 0.2 0.0" dynamic="true"/>
+	</group>
+</prefab>
+

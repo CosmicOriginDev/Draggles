@@ -1,0 +1,26 @@
+<prefab version="1.4.0">
+	<group name="instance=MOD/robot/spawner/spawner.xml" pos="0.0 0.0 24.8" rot="0.0 0.0 0.0">
+		<script pos="0.0 1.0 0.0" file="MOD/robot/spawner/robotSpawner.lua">
+			<body tags="body ground" pos="0.0 0.0 0.0" dynamic="false">
+				<vox tags="unbreakable" file="MOD/robot/spawner/mech-spawner.vox" object="&lt;body&gt;"/>
+				<joint pos="0.0 2.2 0.0" size="0.5"/>
+			</body>
+			<body tags="neck" pos="0.0 1.9 0.0" dynamic="true">
+				<vox tags="unbreakable" file="MOD/robot/spawner/mech-spawner.vox" object="&lt;neck&gt;"/>
+				<joint pos="0.0 1.8 0.0" size="0.5"/>
+			</body>
+			<body tags="neck" pos="0.0 3.4 0.0" dynamic="true">
+				<vox tags="unbreakable" file="MOD/robot/spawner/mech-spawner.vox" object="&lt;neck&gt;"/>
+				<joint pos="0.0 1.8 0.0" size="0.5"/>
+			</body>
+			<body tags="neck" pos="0.0 4.9 0.0" dynamic="true">
+				<vox tags="unbreakable" file="MOD/robot/spawner/mech-spawner.vox" object="&lt;neck&gt;"/>
+				<joint pos="0.0 1.8 0.0" size="0.5"/>
+			</body>
+			<body tags="head onlyLaser HP=1" pos="0.0 6.4 0.0" dynamic="true">
+				<vox tags="unbreakable" pos="0.0 0.0 0.0" rot="-90.0 0.0 0.0" file="MOD/robot/spawner/mech-spawner.vox" object="&lt;head&gt;"/>
+			</body>
+		</script>
+	</group>
+</prefab>
+

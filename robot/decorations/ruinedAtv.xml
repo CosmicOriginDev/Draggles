@@ -1,0 +1,6 @@
+<prefab version="1.4.0">
+	<group name="instance=MOD/robot/decorations/ruinedAtv.xml" pos="1.2 1.0 21.1" rot="0.0 0.0 0.0">
+		<vox pos="0.0 0.0 0.0" rot="13.2 41.8 -15.2" texture="2 1" blendtexture="2 1" file="MOD/robot/decorations/mil-atv.vox"/>
+	</group>
+</prefab>
+

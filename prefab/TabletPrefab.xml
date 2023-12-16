@@ -1,0 +1,13 @@
+<prefab version="1.4.0">
+	<group name="instance=MOD/prefab/TabletPrefab.xml" pos="0.0 4.6 50.99996" rot="0.0 0.0 0.0">
+		<script pos="0.0 -0.1 0.0" file="MOD/scripts/tabletScript.lua">
+			<body tags="TabletBody" pos="0.0 0.0 0.0" dynamic="true">
+				<vox pos="0.2 -1.8 0.7" rot="-50.0 0.0 0.0" collide="false" file="MOD/vox/dragonTablet.vox">
+					<screen tags='screen command="" ammo=0 HP=1' pos="-0.2 0.2 -0.1" rot="-90.0 0.0 0.0" size="0.8 0.4" bulge="0" resolution="800 512" script="MOD/scripts/tabletScreenScript.lua" enabled="true" emissive="0.2"/>
+				</vox>
+				<voxbox tags="invisible" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" collide="false" size="1 1 1"/>
+			</body>
+		</script>
+	</group>
+</prefab>
+

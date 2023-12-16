@@ -1,0 +1,7 @@
+<prefab version="1.4.0">
+	<group name="instance=MOD/robot/decorations/ruinedTracked.xml" pos="7.2 1.0 13.5" rot="0.0 0.0 0.0">
+		<vox pos="0.0 0.0 0.0" rot="13.2 41.8 -15.2" texture="2 1" blendtexture="2 1" file="MOD/robot/decorations/mil-tracked.vox" object="body_front"/>
+		<vox pos="-2.8 -0.4 -3.3" rot="13.2 101.8 -15.2" texture="2 1" blendtexture="2 1" file="MOD/robot/decorations/mil-tracked.vox" object="body_back"/>
+	</group>
+</prefab>
+

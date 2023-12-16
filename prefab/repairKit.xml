@@ -1,0 +1,8 @@
+<prefab version="1.4.0">
+	<group name="instance=MOD/prefab/repairKit.xml" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+		<body tags="unbreakable repairKit" pos="0.0 0.4 -0.1" dynamic="true">
+			<vox pos="0.0 0.0 0.1" prop="false" file="MOD/vox/upgradeStation.vox" object="&lt;repair-kit&gt;"/>
+		</body>
+	</group>
+</prefab>
+

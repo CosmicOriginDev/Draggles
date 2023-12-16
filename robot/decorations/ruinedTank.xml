@@ -1,0 +1,6 @@
+<prefab version="1.4.0">
+	<group name="ruinedTank" pos="0.0 1.0 13.5">
+		<vox pos="0.0 0.0 0.0" rot="20.0 0.0 30.0" texture="2 1" blendtexture="2 1" file="MOD/robot/decorations/mil-tank.vox"/>
+	</group>
+</prefab>
+

@@ -1,0 +1,9 @@
+<prefab version="1.4.0">
+	<group name="instance=MOD/prefab/portal.xml" pos="0.0 1.0 15.3" rot="0.0 0.0 0.0">
+		<script pos="0.0 0.0 -0.1" file="MOD/scripts/portalScript.lua">
+			<vox tags="unbreakable" pos="0.0 0.0 0.1" file="MOD/vox/portal.vox"/>
+			<trigger tags="portalTrigger" pos="0.0 0.2 0.0" type="box" size="1 3 1"/>
+		</script>
+	</group>
+</prefab>
+

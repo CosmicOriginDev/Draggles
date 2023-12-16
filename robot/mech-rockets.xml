@@ -1,0 +1,8 @@
+<prefab version="1.4.0">
+	<group name="instance=MOD/robot/mech-rockets.xml" pos="0.0 3.3 7.5" rot="0.0 0.0 0.0">
+		<body tags="enemyBot type=rockets HP=10" pos="0.0 0.0 0.0" dynamic="false">
+			<vox tags="unbreakable" pos="0.1 -0.6 -0.4" rot="0.0 180.0 0.0" file="MOD/robot/mech-rockets.vox"/>
+		</body>
+	</group>
+</prefab>
+

@@ -1,0 +1,8 @@
+<prefab version="1.4.0">
+	<group name="instance=MOD/prefab/grenade.xml" pos="0.0 7.3 10.7" rot="0.0 0.0 0.0">
+		<body tags="grenadeBody" pos="0.0 0.0 -0.1" dynamic="true">
+			<vox tags="explosive=2 NOEAT" pos="0.0 0.0 0.1" strength="0.00001" prop="false" file="explosive.vox"/>
+		</body>
+	</group>
+</prefab>
+

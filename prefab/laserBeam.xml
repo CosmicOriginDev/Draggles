@@ -1,0 +1,8 @@
+<prefab version="1.4.0">
+	<group name="laserBeam" pos="-10.1 6.3 23.5">
+		<script file="MOD/scripts/laserBeam.lua">
+			<location tags="laserLoc"/>
+		</script>
+	</group>
+</prefab>
+

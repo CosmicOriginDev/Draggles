@@ -1,0 +1,10 @@
+<prefab version="1.3.0">
+	<group pos="42.7 1.8 170.8">
+		<body tags="unbreakable upgradeCan fuelUP" pos="0.0 0.4 -0.1" dynamic="true">
+			<vox tags="unbreakable upgradeCan fuelUP" pos="0.0 0.0 0.1" prop="false" file="MOD/vox/upgradeStation.vox" object="&lt;upgrade-canister&gt;">
+				<vox pos="0.025 0.3 -0.025" file="MOD/map/assets/props/propane_small.vox" scale="0.25" pbr="0 0 0 1"/>
+			</vox>
+		</body>
+	</group>
+</prefab>
+

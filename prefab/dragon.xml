@@ -1,0 +1,152 @@
+<prefab version="1.3.0">
+	<group name="instance=MOD/prefab/dragon.xml" pos="0.0 3.3 169.5" rot="0.0 0.0 0.0">
+		<script pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/scripts/dragon.lua" param0="type=chase" param1="speed=10" param2="turnspeed=1.5">
+			<body tags="dragonBody" pos="0.1 -1.5 1.1" rot="0.0 0.0 0.0" dynamic="true">
+				<body name="head " tags="head dragonBrain currentCommand=0 ammo=0 interact=pet" pos="0.0 5.4 -4.2" rot="0.0 0.0 0.0" dynamic="true">
+					<joint name="head_joint" tags="head" pos="0.0 -1.9 0.15" rot="-90.0 90.0 0.0" type="hinge" size="0.25" limits="-60 60"/>
+					<body tags="dragonHead interact=pet" pos="0.0 0.051 -1.982" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable " pos="0.0 0.0 0.0" rot="0.0 -180.0 0.0" texture="12 1" density="0.01" prop="false" file="MOD/vox/dragon.vox" object="&lt;head3&gt;">
+							<joint name="head_joint" tags="neckUpper" pos="0.0 0.3 -0.45" rot="0.0 -90.0 0.0" type="hinge" size="0.25" rotstrength="0" rotspring="1" limits="-90 90"/>
+							<location tags="weapon=rocket strength=10 count=16 cooldown=1 charge=0.1 idle=1 spread=0.000001" pos="0.0 0.4 1.6" rot="0.0 180.0 0.0"/>
+							<voxbox pos="-0.19 0.329 1.229" rot="45.0 0.0 0.0" collide="false" size="1 2 1"/>
+							<voxbox pos="0.09 0.329 1.229" rot="45.0 0.0 0.0" collide="false" size="1 2 1"/>
+							<voxbox pos="0.1 0.4 1.0" rot="45.0 0.0 0.0" collide="false" size="1 1 1"/>
+							<voxbox pos="-0.2 0.4 1.0" rot="45.0 0.0 0.0" collide="false" size="1 1 1"/>
+							<location tags="biteLocation" pos="0.0 0.4 1.6" rot="0.0 -180.0 0.0"/>
+						</vox>
+						<body pos="0.0 -0.1 -1.1" dynamic="true">
+							<vox tags="dragonJaw" pos="0.0 0.1 -0.1" rot="0.0 180.0 0.0" density="0.0001" prop="false" file="MOD/vox/dragon.vox" object="&lt;jaw&gt;"/>
+							<voxbox pos="-0.1 0.5 0.1" rot="45.0 -180.0 0.0" collide="false" size="1 1 1"/>
+							<joint tags="jawPivot" pos="0.0 0.5 0.3" rot="0.0 90.0 0.0" type="hinge" size="0.2" limits="-90 0"/>
+							<voxbox pos="0.2 0.5 -0.1" rot="45.0 -170.0 0.0" collide="false" size="1 1 1"/>
+							<voxbox pos="-0.1 0.5 -0.1" rot="45.0 170.0 0.0" collide="false" size="1 1 1"/>
+							<voxbox pos="0.2 0.5 0.1" rot="45.0 -180.0 0.0" collide="false" size="1 1 1"/>
+						</body>
+					</body>
+					<vox pos="0.0 -1.67814 0.48432" rot="40.0 -180.0 0.0" density="0.01" file="MOD/vox/dragon.vox" object="&lt;lowerneck&gt;"/>
+					<vox pos="0.0 -0.86014 0.05902" rot="40.0 180.0 0.0" density="0.01" prop="true" file="MOD/vox/dragon.vox" object="&lt;middleneck&gt;">
+						<joint name="head_joint" tags="neckLower" pos="0.0 0.0 0.15" rot="0.0 -90.0 90.0" type="hinge" size="0.25" rotstrength="0" limits="-90 90"/>
+					</vox>
+					<vox pos="0.0 0.2 -0.7" rot="40.0 -180.0 0.0" density="0.01" prop="true" file="MOD/vox/dragon.vox" object="&lt;upperneck&gt;">
+						<joint name="head_joint" tags="neckMiddle" pos="0.0 0.0 0.25" rot="0.0 -90.0 90.0" type="hinge" size="0.25" rotstrength="0" limits="-90 90"/>
+					</vox>
+					<light name="head_light" tags="eye viewdist=999" pos="-0.05 1.569 -3.724" rot="0.0 -180.0 0.0" type="area" color="0 0 0" scale="10" size="0.5 0.1" reach="10" fogscale="1"/>
+				</body>
+				<group name="l_rear_leg" pos="-0.7 1.2 -0.2" rot="0.0 0.0 0.0">
+					<body name="l_leg" tags="leg" pos="0.1 0.5 0.1" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable" pos="-0.1 0.1 0.0" rot="0.0 -180.0 0.0" texture="12 1" density="0.25" file="MOD/vox/dragon.vox" object="&lt;left_rear_leg_upper&gt;">
+							<joint name="l_leg_joint" pos="0.0 1.65 -0.45" rot="0.0 90.0 -90" type="hinge" size="0.15" rotstrength="1" limits="-60 60"/>
+						</vox>
+					</body>
+					<body name="l_foot" tags="foot" pos="0.0 -0.6 0.5" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable" pos="0.0 0.0 -0.1" rot="0.0 -180.0 0.0" texture="12 1" file="MOD/vox/dragon.vox" object="&lt;left_rear_leg_lower&gt;">
+							<joint name="l_foot_joint" pos="0.15 1.95 1.05" rot="0.0 90.0 -90.0" type="hinge" size="0.15" rotstrength="0" rotspring="0" limits="-25 75"/>
+							<vox tags="unbreakable" pos="0.1 -0.1 0.5" rot="0.0 0.0 0.0" file="MOD/vox/dragon.vox" object="&lt;big_claw&gt;"/>
+							<vox tags="unbreakable" pos="-0.325 -0.1 0.4" rot="0.0 -10.0 0.0" file="MOD/vox/dragon.vox" object="&lt;big_claw&gt;"/>
+							<vox tags="unbreakable" pos="0.525 -0.1 0.375" rot="0.0 10.0 0.0" file="MOD/vox/dragon.vox" object="&lt;big_claw&gt;"/>
+						</vox>
+					</body>
+				</group>
+				<group name="r_rear_leg" pos="0.8 1.2 -0.2" rot="0.0 0.0 0.0">
+					<body name="r_leg" tags="leg" pos="0.0 0.5 0.1" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable" pos="-0.1 0.1 0.0" rot="0.0 -180.0 0.0" texture="12 1" density="0.25" file="MOD/vox/dragon.vox" object="&lt;right_rear_leg_upper&gt;">
+							<joint name="r_leg_joint" pos="0.0 1.65 -0.45" rot="0.0 90.0 -90" type="hinge" size="0.15" rotstrength="1" limits="-60 60"/>
+						</vox>
+					</body>
+					<body name="r_foot" tags="foot" pos="0.3 -0.6 0.5" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable" pos="-0.3 0.0 -0.1" rot="0.0 -180.0 0.0" texture="12 1" file="MOD/vox/dragon.vox" object="&lt;right_rear_leg_lower&gt;">
+							<joint name="r_foot_joint" pos="-0.15 1.95 1.05" rot="0.0 90.0 -90.0" type="hinge" size="0.15" rotstrength="0" rotspring="0" limits="-25 75"/>
+							<vox tags="unbreakable" pos="0.325 -0.1 0.375" rot="0.0 10.0 0.0" file="MOD/vox/dragon.vox" object="&lt;big_claw&gt;"/>
+							<vox tags="unbreakable" pos="-0.1 -0.1 0.5" rot="0.0 0.0 0.0" file="MOD/vox/dragon.vox" object="&lt;big_claw&gt;"/>
+							<vox tags="unbreakable" pos="-0.525 -0.1 0.4" rot="0.0 -10.0 0.0" file="MOD/vox/dragon.vox" object="&lt;big_claw&gt;"/>
+						</vox>
+					</body>
+				</group>
+				<group name="l_front_leg" pos="-0.9 1.7 -3.0" rot="0.0 0.0 0.0">
+					<body name="l_leg" tags="leg" pos="0.1 0.5 0.1" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable" pos="-0.1 0.1 0.0" rot="0.0 -180.0 0.0" texture="12 1" density="0.25" file="MOD/vox/dragon.vox" object="&lt;left_front_leg_upper&gt;">
+							<joint name="l_leg_joint" pos="-0.3 1.05 -0.15" rot="0.0 90.0 -90" type="ball" size="0.15" rotstrength="1" rotspring="0"/>
+						</vox>
+					</body>
+					<body name="l_foot" tags="foot force=100" pos="0.0 -1.1 -0.5" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable" pos="0.0 0.1 0.3" rot="0.0 -180.0 0.0" texture="12 1" file="MOD/vox/dragon.vox" object="&lt;left_front_leg_lower&gt;">
+							<joint name="l_foot_joint" pos="0.05 1.65 -0.55" rot="-180.0 -90.0 0.0" type="hinge" size="0.15" rotstrength="0" rotspring="0" limits="-90 45" sound="false"/>
+							<vox tags="unbreakable" pos="0.0 -0.1 1.5" rot="0.0 0.0 0.0" collide="false" file="MOD/vox/dragon.vox" object="&lt;claw&gt;"/>
+							<vox tags="unbreakable" pos="-0.3 -0.1 1.3" rot="0.0 -30.0 0.0" collide="false" file="MOD/vox/dragon.vox" object="&lt;claw&gt;"/>
+							<vox tags="unbreakable" pos="0.325 -0.1 1.375" rot="0.0 30.0 0.0" collide="false" file="MOD/vox/dragon.vox" object="&lt;claw&gt;"/>
+							<vox tags="unbreakable" pos="-0.2 0.0 0.6" rot="0.0 -60.0 0.0" collide="false" file="MOD/vox/dragon.vox" object="&lt;claw&gt;"/>
+						</vox>
+					</body>
+				</group>
+				<group name="r_front_leg" pos="0.7 1.7 -3.0" rot="0.0 0.0 0.0">
+					<body name="r_leg" tags="leg" pos="0.3 0.5 0.1" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable" pos="-0.1 0.1 0.0" rot="0.0 -180.0 0.0" texture="12 1" density="0.25" file="MOD/vox/dragon.vox" object="&lt;right_front_leg_upper&gt;">
+							<joint name="r_leg_joint" pos="0.3 1.05 -0.15" rot="0.0 90.0 -90" type="ball" size="0.15" rotstrength="1" rotspring="0"/>
+						</vox>
+					</body>
+					<body name="r_foot" tags="foot force=100" pos="0.1 -1.1 -0.6" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable" pos="0.2 0.1 0.4" rot="0.0 -180.0 0.0" texture="12 1" file="MOD/vox/dragon.vox" object="&lt;right_front_leg_lower&gt;">
+							<joint name="r_foot_joint" pos="0.05 1.65 -0.55" rot="180.0 -90.0 0.0" type="hinge" size="0.15" rotstrength="0" rotspring="0" limits="-90 45"/>
+							<vox tags="unbreakable" pos="0.0 -0.1 1.5" collide="false" file="MOD/vox/dragon.vox" object="&lt;claw&gt;"/>
+							<vox tags="unbreakable" pos="-0.3 -0.1 1.3" rot="0.0 -30.0 0.0" collide="false" file="MOD/vox/dragon.vox" object="&lt;claw&gt;"/>
+							<vox tags="unbreakable" pos="0.325 -0.1 1.375" rot="0.0 30.0 0.0" collide="false" file="MOD/vox/dragon.vox" object="&lt;claw&gt;"/>
+							<vox tags="unbreakable" pos="0.25 0.0 0.7" rot="0.0 60.0 0.0" collide="false" file="MOD/vox/dragon.vox" object="&lt;claw&gt;"/>
+						</vox>
+					</body>
+				</group>
+				<vehicle tags="rideDragon" pos="0.35 4.5 -0.8" rot="0.0 0.0 0.0" sound="smallboat" spring="0" topspeed="0" strength="1" steerassist="0">
+					<body name="body" tags="body dragonBody" pos="-0.4 -2.0 -0.2" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable interact=mount" pos="0.05 -0.1 -0.4" rot="0.0 -180.0 0.0" texture="12 1" density="60" file="MOD/vox/dragon.vox" object="&lt;body2&gt;">
+							<group name="wings" pos="0.0 5.2 0.0">
+								<body pos="8.20001 -5.0 3.9" rot="-40.0 0.0 0.0" dynamic="true">
+									<voxbox tags="unbreakable" pos="-7.9 2.4 -0.9" rot="0.0 0.0 0.0" prop="false" size="3 2 3">
+										<vox tags="extendedLeftWing unbreakable" pos="8.0 -2.4 0.9" rot="0.0 0.0 0.0" density="-1" collide="false" prop="false" file="MOD/vox/dragon.vox" object="&lt;left_wing&gt;"/>
+										<joint tags="leftWingPivot" pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" type="hinge" size="0.1" limits="-90 60"/>
+									</voxbox>
+								</body>
+								<body pos="-8.20002 -5.0 3.9" rot="-40.0 0.0 0.0" dynamic="true">
+									<voxbox tags="unbreakable" pos="7.6 2.4 -0.9" rot="0.0 0.0 0.0" prop="false" size="3 2 3">
+										<joint tags="rightWingPivot" pos="0.3 0.1 0.1" rot="180.0 180.0 0.0" type="hinge" size="0.1" limits="-60 90"/>
+										<vox tags="extendedRightWing unbreakable" pos="-7.7 -2.4 0.9" rot="0.0 0.0 0.0" density="-1" collide="false" prop="false" file="MOD/vox/dragon.vox" object="&lt;right_wing&gt;"/>
+									</voxbox>
+								</body>
+							</group>
+						</vox>
+						<group name="tail" pos="0.1 -0.2 4.5">
+							<vox tags="unbreakable" pos="-0.05 0.0 0.0" rot="0.0 180.0 0.0" density="0.01" prop="true" file="MOD/vox/dragon.vox" object="&lt;tail1&gt;">
+								<joint tags="tailPivotUpper" pos="0.0 1.2 1.2" rot="-90.0 -90.0 0.0" type="hinge" size="0.3" rotspring="1" limits="-90 90"/>
+							</vox>
+							<vox tags="unbreakable" pos="-0.05 -0.2 2.0" rot="20.0 -180.0 0.0" density="0.01" prop="true" file="MOD/vox/dragon.vox" object="&lt;tail2&gt;">
+								<joint tags="tailPivotLower" pos="0.0 0.9 0.8" rot="-90.0 -90.0 0.0" type="hinge" size="0.3" rotspring="1" limits="-90 90"/>
+							</vox>
+							<body name="curl_tail" pos="0.0 -0.3 3.3" dynamic="true">
+								<vox tags="unbreakable" pos="-0.05 0.8 0.3" rot="50.0 -180.0 0.0" density="0.01" prop="false" file="MOD/vox/dragon.vox" object="&lt;tail3&gt;">
+									<joint tags="tailPivotCurl" pos="0.0 0.7 0.6" rot="0.0 -90.0 0.0" type="hinge" size="0.3" rotspring="1" limits="-90 90"/>
+								</vox>
+								<vox tags="unbreakable" pos="-0.05 2.406 1.205" rot="80.0 180.0 0.0" density="0.01" collide="false" prop="false" file="MOD/vox/dragon.vox" object="&lt;tail4&gt;"/>
+								<vox tags="unbreakable" pos="-0.05 4.303 1.153" rot="100.0 -180.0 0.0" density="0.01" collide="false" prop="false" file="MOD/vox/dragon.vox" object="&lt;tail5&gt;"/>
+								<vox tags="unbreakable" pos="-0.05 6.208 0.247" rot="130.0 -180.0 0.0" density="0.01" collide="false" prop="false" file="MOD/vox/dragon.vox" object="&lt;tail6&gt;"/>
+							</body>
+							<vox tags="unbreakable" pos="-0.05 0.8 -1.7" rot="0.0 -180.0 0.0" density="0.01" prop="true" file="MOD/vox/dragon.vox" object="&lt;tailbase&gt;">
+								<joint tags="tailPivotBase" pos="-0.0 0.7 0.5" rot="180.0 -90.0 0.0" type="hinge" size="0.3" rotspring="1" limits="-90 90"/>
+							</vox>
+						</group>
+						<group name="ride" pos="0.05 2.0 -0.1" rot="0.0 0.0 0.0">
+							<group name="ride" tags="ride" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+						</group>
+						<vox tags="unbreakable" pos="0.04 -0.3 -1.4" rot="0.0 180.0 0.0" density="0.0001" strength="2" collide="false" file="MOD/vox/dragon.vox" object="&lt;saddle2&gt;">
+							<location tags="player" pos="0.05 3.7 -0.5" rot="0.0 -180.0 0.0"/>
+							<location tags="exit" pos="0.05 3.7 -0.5" rot="0.0 180.0 0.0"/>
+							<script pos="0.0 2.9 0.1" file="MOD/scripts/tabletScript.lua">
+								<vox pos="-0.1 0.1 0.1" rot="70.0 180.0 0.0" file="MOD/vox/dragonTablet.vox" scale="0.5">
+									<screen tags="screen" pos="-0.1 0.1 -0.05" rot="-90.0 0.0 0.0" size="0.4 0.2" bulge="0.04" script="MOD/scripts/tabletScreenScript.lua" enabled="true"/>
+								</vox>
+							</script>
+						</vox>
+					</body>
+				</vehicle>
+			</body>
+		</script>
+	</group>
+</prefab>
+

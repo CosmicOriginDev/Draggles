@@ -1,0 +1,10 @@
+<prefab version="1.4.0">
+	<group name="instance=MOD/prefab/HPUpgrade.xml" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+		<body tags="unbreakable upgradeCan HPUP" pos="0.0 0.4 -0.1" dynamic="true">
+			<vox tags="unbreakable upgradeCan HPUP" pos="0.0 0.0 0.1" prop="false" file="MOD/vox/upgradeStation.vox" object="&lt;upgrade-canister&gt;">
+				<vox pos="0.025 0.35 -0.025" file="MOD/vox/upgradeStation.vox" object="&lt;HP&gt;" scale="0.5" pbr="0 0 0 1"/>
+			</vox>
+		</body>
+	</group>
+</prefab>
+

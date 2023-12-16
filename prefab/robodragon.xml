@@ -1,0 +1,153 @@
+<prefab version="1.4.0">
+	<group name="instance=MOD/prefab/robodragon.xml" pos="-3.60001 2.2 49.39997" rot="0.0 0.0 0.0">
+		<script pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/scripts/dragon.lua" param0="type=chase" param1="speed=10" param2="turnspeed=2.5">
+			<body pos="-1.6 1.0 1.7" rot="0.0 0.0 0.0" dynamic="true">
+				<body name="head " tags="head dragonBrain currentCommand=0 ammo=0 HP=1 interact=pet targetx=0 targety=0 targetz=0 type=fire maxammo=15" pos="0.0 6.0 -7.0" rot="0.0 0.0 0.0" dynamic="true">
+					<joint name="head_joint" tags="head headYawJoint" pos="0.0 -1.6 0.2" rot="-90.0 90.0 0.0" type="hinge" size="0.25" rotstrength="0.5" rotspring="0.1"/>
+					<body tags="dragonHead interact=pet" pos="0.0 0.351 -1.982" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable " pos="0.0 -0.3 0.0" rot="0.0 -180.0 0.0" texture="12 1" density="0.00001" prop="false" file="MOD/vox/roboDragon.vox" object="&lt;head3&gt;">
+							<joint name="head_joint" tags="neckUpper" pos="0.0 0.55 -0.95" rot="0.0 -90.0 0.0" type="ball" size="0.3" collide="false" limits="-90 90"/>
+							<location tags="biteLocation" pos="0.0 0.6 1.2" rot="0.0 -180.0 0.0"/>
+							<screen name="eyeScreen" tags="EyeScreen eyeY=0 unbreakable" pos="0.0 0.95 0.4" size="0.6 0.3" bulge="0" resolution="16 8" script="MOD/scripts/dragonEyes.lua" enabled="true" emissive="0.2"/>
+						</vox>
+						<body pos="0.0 -0.4 -1.1" dynamic="true">
+							<vox tags="dragonJaw" pos="0.0 0.2 0.1" rot="0.0 -180.0 0.0" density="0.0001" prop="true" file="MOD/vox/roboDragon.vox" object="&lt;jaw&gt;"/>
+							<joint tags="jawPivot" pos="0.0 0.5 0.6" rot="0.0 90.0 0.0" type="hinge" size="0.2" limits="-90 0"/>
+						</body>
+					</body>
+					<vox pos="0.0 -1.678 0.184" rot="0.0 180.0 0.0" density="1" file="MOD/vox/roboDragon.vox" object="&lt;lowerneck&gt;"/>
+					<vox pos="0.0 -0.86 0.459" rot="40.0 180.0 0.0" density="0.0001" collide="true" prop="true" file="MOD/vox/roboDragon.vox" object="&lt;middleneck&gt;">
+						<joint name="head_joint" tags="neckLower" pos="0.0 0.2 0.15" rot="0.0 -90.0 90.0" type="hinge" size="0.3" rotstrength="0.001" rotspring="0.1" collide="true" limits="-90 90"/>
+					</vox>
+					<vox pos="0.0 -0.2 -0.6" rot="0.0 180.0 0.0" density="0.0001" prop="true" file="MOD/vox/roboDragon.vox" object="&lt;upperneck&gt;">
+						<joint name="head_joint" tags="neckMiddle" pos="0.0 0.2 -0.3" rot="0.0 -90.0 90.0" type="hinge" size="0.3" rotstrength="0.01" rotspring="0.1" collide="false" limits="-90 90"/>
+					</vox>
+				</body>
+				<group name="l_rear_leg" pos="-0.9 1.3 -1.3" rot="0.0 0.0 0.0">
+					<body name="l_leg" tags="leg" pos="0.1 0.5 0.1" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable" pos="-0.1 0.1 0.0" rot="0.0 -180.0 0.0" texture="12 1" density="0.25" file="MOD/vox/roboDragon.vox" object="&lt;left_rear_leg_upper&gt;">
+							<joint name="l_leg_joint" pos="-0.1 1.75 -0.35" rot="0.0 90.0 -90" type="hinge" size="0.3" rotstrength="1" limits="-60 60" sound="false"/>
+						</vox>
+					</body>
+					<body name="l_foot" tags="foot" pos="0.0 -0.6 0.5" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable" pos="0.0 0.0 -0.1" rot="0.0 -180.0 0.0" texture="12 1" file="MOD/vox/roboDragon.vox" object="&lt;left_rear_leg_lower&gt;">
+							<joint name="l_foot_joint" pos="0.15 1.45 1.05" rot="0.0 90.0 -90.0" type="hinge" size="0.15" rotstrength="0" rotspring="0" limits="-25 75"/>
+						</vox>
+					</body>
+				</group>
+				<group name="r_rear_leg" pos="1.0 1.3 -1.3" rot="0.0 0.0 0.0">
+					<body name="r_leg" tags="leg" pos="0.0 0.5 0.1" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable" pos="-0.1 0.1 0.0" rot="0.0 -180.0 0.0" texture="12 1" density="0.25" file="MOD/vox/roboDragon.vox" object="&lt;right_rear_leg_upper&gt;">
+							<joint name="r_leg_joint" pos="0.1 1.75 -0.45" rot="0.0 90.0 -90" type="hinge" size="0.3" rotstrength="1" limits="-60 60"/>
+						</vox>
+					</body>
+					<body name="r_foot" tags="foot" pos="0.3 -0.6 0.5" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable" pos="-0.4 0.0 -0.1" rot="0.0 -180.0 0.0" texture="12 1" file="MOD/vox/roboDragon.vox" object="&lt;right_rear_leg_lower&gt;">
+							<joint name="r_foot_joint" pos="-0.15 1.45 1.05" rot="0.0 90.0 -90.0" type="hinge" size="0.15" rotstrength="0" rotspring="0" limits="-25 75"/>
+						</vox>
+					</body>
+				</group>
+				<group name="l_front_leg" pos="-0.9 1.8 -5.1" rot="0.0 0.0 0.0">
+					<body name="l_leg" tags="leg" pos="-0.1 -0.1 -0.3" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable" pos="-0.1 0.1 0.0" rot="0.0 -180.0 0.0" texture="12 1" density="0.25" file="MOD/vox/roboDragon.vox" object="&lt;left_front_leg_upper&gt;">
+							<joint name="l_leg_joint" pos="-0.1 1.7 0.0" rot="0.0 90.0 -90" type="ball" size="0.3" rotstrength="1" rotspring="0"/>
+						</vox>
+					</body>
+					<body name="l_foot" tags="foot force=100" pos="-0.2 -1.1 -1.3" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable" pos="0.0 0.1 0.3" rot="0.0 -180.0 0.0" texture="12 1" file="MOD/vox/roboDragon.vox" object="&lt;left_front_leg_lower&gt;">
+							<joint name="l_foot_joint" pos="0.05 1.25 -0.7" rot="-180.0 -90.0 0.0" type="hinge" size="0.15" rotstrength="0" rotspring="0" limits="-90 45" sound="false"/>
+						</vox>
+					</body>
+				</group>
+				<group name="r_front_leg" pos="1.0 1.2 -5.5" rot="0.0 0.0 0.0">
+					<body name="r_leg" tags="leg" pos="0.3 0.5 0.1" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable" pos="-0.1 0.1 0.0" rot="0.0 -180.0 0.0" texture="12 1" density="0.25" file="MOD/vox/roboDragon.vox" object="&lt;right_front_leg_upper&gt;">
+							<joint name="r_leg_joint" pos="0.2 1.7 0.0" rot="0.0 90.0 -90" type="ball" size="0.3" rotstrength="1" rotspring="0"/>
+						</vox>
+					</body>
+					<body name="r_foot" tags="foot force=100" pos="-0.1 -0.5 -1.0" rot="0.0 0.0 0.0" dynamic="true">
+						<vox tags="unbreakable" pos="0.2 0.1 0.4" rot="0.0 -180.0 0.0" texture="12 1" file="MOD/vox/roboDragon.vox" object="&lt;right_front_leg_lower&gt;">
+							<joint name="r_foot_joint" pos="-0.05 1.15 -0.7" rot="180.0 -90.0 0.0" type="hinge" size="0.15" rotstrength="0" rotspring="0" limits="-90 45"/>
+						</vox>
+					</body>
+				</group>
+				<body name="body" tags="body dragonBody " pos="0.0 2.6 -2.7" rot="0.0 0.0 0.0" dynamic="true">
+					<vox tags="unbreakable  upgradeTarget" pos="0.0 -0.1 -0.4" rot="0.0 -180.0 0.0" density="60" file="MOD/vox/roboDragon.vox" object="&lt;body2&gt;">
+						<group name="wings" pos="0.0 1.5 0.0">
+							<group pos="6.6 0.4 0.0">
+								<body pos="1.0 -2.0 0.8" rot="0.0 0.0 0.0" dynamic="true">
+									<joint tags="leftWingPivot" pos="-7.1 2.25 -0.8" rot="90.0 0.0 0.0" type="hinge" size="0.2" limits="-80 0"/>
+									<vox tags="extendedLeftWing unbreakable" pos="-2.9 2.3 -0.7" rot="0.0 0.0 0.0" density="0.1" file="MOD/vox/roboDragon.vox" object="&lt;left_wing&gt;"/>
+								</body>
+								<body pos="2.1 3.1 0.0" rot="0.0 0.0 0.0" dynamic="true">
+									<voxbox tags="unbreakable" pos="0.0 0.2 0.0" prop="true" size="1 1 1">
+										<joint tags="rotorLJoint" pos="0.05 0.1 0.05" rot="-90.0 0.0 0.0" type="hinge" size="0.2" rotspring="1"/>
+										<vox tags="rotorL" pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" collide="false" prop="false" file="MOD/vox/roboDragon.vox" object="&lt;rotor&gt;"/>
+									</voxbox>
+								</body>
+							</group>
+							<group pos="-6.6 0.4 0.0">
+								<body pos="-2.2 3.1 0.0" rot="0.0 0.0 0.0" dynamic="true">
+									<voxbox tags="unbreakable" pos="0.0 0.2 0.0" prop="true" size="1 1 1">
+										<joint tags="rotorRJoint" pos="0.05 0.1 0.05" rot="-90.0 0.0 0.0" type="hinge" size="0.2" rotspring="1"/>
+										<vox tags="rotorR" pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" collide="false" prop="false" file="MOD/vox/roboDragon.vox" object="&lt;rotor&gt;"/>
+									</voxbox>
+								</body>
+								<body pos="-1.3 -2.0 0.8" rot="0.0 0.0 0.0" dynamic="true">
+									<joint tags="rightWingPivot" pos="7.4 2.25 -0.8" rot="-90.0 -180.0 0.0" type="hinge" size="0.2" limits="-80 0"/>
+									<vox tags="extendedRightWing unbreakable" pos="3.1 2.3 -0.7" rot="0.0 0.0 0.0" density="0.1" prop="true" file="MOD/vox/roboDragon.vox" object="&lt;right_wing&gt;"/>
+								</body>
+							</group>
+						</group>
+						<light name="head_light" tags="eye viewdist=999" pos="0.05 0.769 4.00001" rot="0.0 0.0 0.0" type="area" color="0 0 0" scale="10" size="0.5 0.1" reach="10" fogscale="1"/>
+						<group pos="-0.0 2.0 -1.9">
+							<location tags="exit" pos="-0.0 0.8 4.80002" rot="0.0 -180.0 0.0"/>
+							<location tags="player" pos="0.0 -0.8 4.90002" rot="0.0 -180.0 0.0"/>
+							<script pos="0.05 -1.15 5.3" rot="30.0 0.0 0.0" file="MOD/scripts/tabletScript.lua">
+								<vox pos="-0.1 0.1 0.1" rot="70.0 180.0 0.0" file="MOD/vox/dragonTablet.vox" scale="0.25">
+									<screen tags="screen" pos="-0.05 0.05 -0.025" rot="-90.0 0.0 0.0" size="0.2 0.1" bulge="0" resolution="800 512" script="MOD/scripts/tabletScreenScript.lua" enabled="true" emissive="0.2"/>
+								</vox>
+							</script>
+							<instance pos="0.25 -1.3 5.35001" rot="0.0 0.0 0.0" file="MOD/prefab/boost-console.xml"/>
+							<group name="instance=MOD/prefab/weapon-console.xml" pos="-0.3 -1.3 5.34999" rot="0.0 0.0 0.0">
+								<vox file="MOD/vox/cockpit.vox" object="&lt;selector-console&gt;" scale="0.5">
+									<screen tags="weaponScreen sel=1 y1=0 y1=0 y2=0 y3=0 y4=0" pos="0.025 0.225 0.1" rot="0.0 180.0 0.0" size="0.15 0.15" bulge="0" resolution="128 128" script="MOD/scripts/weaponScreenScript.lua" enabled="true" emissive="0.2"/>
+								</vox>
+							</group>
+						</group>
+						<vox tags="unbreakable" pos="0.0 0.1 0.3" collide="false" file="MOD/vox/roboDragon.vox" object="&lt;fuelTank&gt;"/>
+						<vox tags="unbreakable doors interact=mount" pos="0.0 0.3 3.4" file="MOD/vox/roboDragon.vox" object="&lt;doors&gt;"/>
+					</vox>
+					<group name="tail" pos="0.0 -0.9 5.6" rot="30.0 0.0 0.0">
+						<vox tags="unbreakable" pos="0.0 0.0 -1.4" rot="0.0 180.0 0.0" density="0.00001" prop="true" file="MOD/vox/roboDragon.vox" object="&lt;tail1&gt;">
+							<joint tags="tailPivotUpper" pos="0.0 0.6 0.9" rot="-90.0 -90.0 0.0" type="hinge" size="0.3" rotspring="1" limits="-90 90"/>
+						</vox>
+						<vox tags="unbreakable" pos="0.0 0.4 0.6" rot="20.0 -180.0 0.0" density="0.00001" prop="true" file="MOD/vox/roboDragon.vox" object="&lt;tail2&gt;">
+							<joint tags="tailPivotLower" pos="0.0 0.6 0.9" rot="-90.0 -90.0 0.0" type="hinge" size="0.3" rotspring="1" limits="-90 90"/>
+						</vox>
+						<body name="curl_tail" pos="0.0 1.2 1.9" dynamic="true">
+							<vox tags="unbreakable" pos="0.0 0.5 0.4" rot="50.0 -180.0 0.0" density="0.00001" prop="false" file="MOD/vox/roboDragon.vox" object="&lt;tail3&gt;">
+								<joint tags="tailPivotCurl" pos="-0.0 0.5 0.9" rot="0.0 -90.0 0.0" type="hinge" size="0.3" rotspring="1" limits="-90 90"/>
+							</vox>
+							<vox tags="unbreakable" pos="0.0 2.406 1.205" rot="80.0 180.0 0.0" density="0.00001" collide="false" prop="false" file="MOD/vox/roboDragon.vox" object="&lt;tail4&gt;"/>
+							<vox tags="unbreakable" pos="0.0 4.303 1.253" rot="100.0 -180.0 0.0" density="0.00001" collide="false" prop="false" file="MOD/vox/roboDragon.vox" object="&lt;tail5&gt;"/>
+							<vox tags="unbreakable" pos="0.0 5.74058 -0.11687" rot="50.0 0.0 0.0" density="0.00001" collide="false" prop="false" file="MOD/vox/roboDragon.vox" object="&lt;tail6&gt;"/>
+						</body>
+						<vox tags="unbreakable" pos="0.0 0.4 -2.7" rot="0.0 -180.0 0.0" density="0.01" prop="true" file="MOD/vox/roboDragon.vox" object="&lt;tailbase&gt;">
+							<joint tags="tailPivotBase" pos="0.0 0.2 0.2" rot="180.0 -90.0 0.0" type="hinge" size="0.4" rotspring="1" limits="-90 90"/>
+						</vox>
+					</group>
+					<vox name="minigun" tags="unbreakable minigunBase" pos="0.0 1.4 -2.0" rot="0.0 -180.0 0.0" collide="false" file="MOD/vox/roboDragon.vox" object="&lt;minigun_base&gt;">
+						<vox tags="Rmini" pos="-1.05 0.6 0.2" file="MOD/vox/roboDragon.vox" object="&lt;minigun&gt;" scale="0.5"/>
+						<vox tags="Lmini" pos="1.05 0.6 0.2" file="MOD/vox/roboDragon.vox" object="&lt;minigun&gt;" scale="0.5"/>
+					</vox>
+					<vox name="launcher" tags="unbreakable launcher" pos="0.05 3.2 -0.4" rot="-50.0 180.0 0.0" collide="false" file="MOD/vox/roboDragon.vox" object="&lt;launcher&gt;">
+						<vox name="launcherBase" tags="unbreakable launcherBase" pos="0.1 -0.171 -1.293" rot="-50.0 180.0 0.0" collide="false" file="MOD/vox/roboDragon.vox" object="&lt;launcher-base&gt;"/>
+					</vox>
+					<vox tags="unbreakable booster" pos="0.0 1.9 1.70001" rot="0.0 180.0 0.0" collide="false" file="MOD/vox/roboDragon.vox" object="&lt;booster&gt;"/>
+				</body>
+			</body>
+		</script>
+	</group>
+</prefab>
+

@@ -1,0 +1,7 @@
+<prefab version="1.4.0">
+	<group name="instance=MOD/prefab/canisterSpawn.xml" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+		<script pos="0.0 0.2 0.0" file="MOD/scripts/upgradeCanisterSpawner.lua"/>
+		<script file="MOD/scripts/repairKitSpawner.lua"/>
+	</group>
+</prefab>
+

@@ -1,0 +1,8 @@
+<prefab version="1.4.0">
+	<group name="instance=MOD/prefab/dimensionManager.xml" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+		<body tags="dimensionManager" pos="0.0 0.0 0.0" dynamic="false">
+			<script pos="0.0 0.2 0.0" file="MOD/scripts/dimensionManager.lua"/>
+		</body>
+	</group>
+</prefab>
+

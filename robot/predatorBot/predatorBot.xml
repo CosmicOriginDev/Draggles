@@ -1,0 +1,68 @@
+<prefab version="1.4.0">
+	<group name="instance=MOD/robot/predatorBot/predatorBot.xml" pos="0.0 -2.5 0.0" rot="0.0 0.0 0.0">
+		<script pos="0.0 0.0 0.0" rot="0.0 180.0 0.0" file="MOD/robot/predatorBot/predatorRobot.lua" param0="type=aggressive chase" param1="speed=20" param2="turnspeed=0.75">
+			<body tags="body" pos="0.0 0.0 0.3" rot="0.0 -180.0 0.0" dynamic="true">
+				<vox tags="unbreakable" pos="0.0 0.0 0.0" rot="0.0 -180.0 0.0" density="40" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;body&gt;"/>
+				<vox tags="unbreakable" pos="0.0 -0.8 2.0" rot="0.0 -180.0 0.0" strength="0.000001" collide="false" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;tail&gt;"/>
+			</body>
+			<body tags="aim" pos="0.0 -0.2 2.3" rot="0.0 180.0 0.0" dynamic="true">
+				<vox tags="unbreakable" pos="0.0 0.08731 0.16093" rot="70.0 -180.0 0.0" density="0.0001" collide="false" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;jaw&gt;"/>
+				<vox tags="unbreakable" pos="0.0 0.6 0.4" rot="0.0 180.0 0.0" density="0.0001" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;neck&gt;"/>
+				<vox tags="unbreakable" pos="0.0 0.23241 -0.31755" rot="10.0 180.0 0.0" density="0.0001" collide="false" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;head&gt;">
+					<vox pos="0.275 0.7 0.3" rot="0.0 0.0 0.0" density="0.000001" collide="false" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;eye&gt;" scale="0.2"/>
+					<vox pos="-0.2 0.7 0.3" rot="0.0 0.0 0.0" density="0.000001" collide="false" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;eye&gt;" scale="0.2"/>
+				</vox>
+				<joint pos="-0.05 0.7 0.8" size="0.2"/>
+			</body>
+			<group pos="-0.5 -0.5 1.1" rot="0.0 0.0 0.0">
+				<body tags="leg" pos="0.0 0.1 -0.3" rot="20.0 0.0 0.0" dynamic="true">
+					<vox tags="unbreakable" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;Rshoulder&gt;">
+						<joint pos="0.2 0.95 0.05" rot="0.0 -90.0 -70.0" type="hinge" size="0.1" limits="-60 60"/>
+					</vox>
+				</body>
+				<body tags="foot force=10,10" pos="0.0 -0.8 0.2" dynamic="true">
+					<vox tags="unbreakable" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;Rclaw&gt;"/>
+					<vox tags="unbreakable" pos="0.0 0.1 -0.2" rot="-20.0 0.0 0.0" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;Rforearm&gt;"/>
+					<joint pos="0.05 1.07 -0.606" rot="0.0 -90.0 0.0" type="hinge" size="0.2" limits="-60 60"/>
+				</body>
+			</group>
+			<group pos="0.6 -0.5 1.1" rot="0.0 0.0 0.0">
+				<body tags="leg" pos="0.0 0.1 -0.3" rot="20.0 0.0 0.0" dynamic="true">
+					<vox tags="unbreakable" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;Lshoulder&gt;">
+						<joint pos="-0.2 0.95 0.05" rot="180.0 -90.0 -70.0" type="hinge" size="0.1" limits="-60 60"/>
+					</vox>
+				</body>
+				<body tags="foot force=10,10" pos="0.0 -0.8 0.2" dynamic="true">
+					<vox tags="unbreakable" pos="-0.1 0.0 0.0" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;Lclaw&gt;"/>
+					<vox tags="unbreakable" pos="-0.1 0.1 -0.2" rot="-20.0 0.0 0.0" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;Lforearm&gt;"/>
+					<joint pos="-0.05 1.07 -0.606" rot="0.0 -90.0 0.0" type="hinge" size="0.2" limits="-60 60"/>
+				</body>
+			</group>
+			<group pos="0.6 -0.4 -0.3" rot="0.0 0.0 0.0">
+				<body tags="leg" pos="0.0 0.0 0.0" rot="-30.0 0.0 0.0" dynamic="true">
+					<vox tags="unbreakable" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;Lthigh&gt;">
+						<joint pos="-0.2 0.95 0.15" rot="0.0 90.0 -60.0" type="hinge" size="0.1" limits="-60 60"/>
+					</vox>
+				</body>
+				<body tags="foot force=10,10" pos="0.0 -1.0 -0.7" dynamic="true">
+					<vox tags="unbreakable" pos="-0.1 0.0 0.0" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;Lfoot&gt;"/>
+					<vox tags="unbreakable" pos="-0.1 0.7 -0.4" rot="70.0 0.0 0.0" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;Lshin&gt;"/>
+					<joint pos="-0.05 1.07 0.594" rot="0.0 -90.0 0.0" type="hinge" size="0.2" limits="-60 60"/>
+				</body>
+			</group>
+			<group pos="-0.5 -0.4 -0.3" rot="0.0 0.0 0.0">
+				<body tags="leg" pos="0.0 0.0 0.0" rot="-30.0 0.0 0.0" dynamic="true">
+					<vox tags="unbreakable" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;Rthigh&gt;">
+						<joint pos="0.2 0.95 0.15" rot="-180.0 90.0 -60.0" type="hinge" size="0.1" limits="-60 60"/>
+					</vox>
+				</body>
+				<body tags="foot force=10,10" pos="0.1 -1.0 -0.7" dynamic="true">
+					<vox tags="unbreakable" pos="-0.1 0.0 0.0" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;Rfoot&gt;"/>
+					<vox tags="unbreakable" pos="-0.1 0.7 -0.4" rot="70.0 0.0 0.0" file="MOD/robot/predatorBot/predator-bot.vox" object="&lt;Rshin&gt;"/>
+					<joint pos="-0.05 1.07 0.594" rot="0.0 -90.0 0.0" type="hinge" size="0.2" limits="-60 60"/>
+				</body>
+			</group>
+		</script>
+	</group>
+</prefab>
+
