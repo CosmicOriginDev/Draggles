@@ -1,0 +1,82 @@
+<scene version="1.4.0" shadowVolume="0 0 0">
+	<vox tags="nocull" pos="0.0 28.5 0.0" file="MOD/vox/sky/lockelleFar.vox" scale="50"/>
+	<water pos="0.0 56.8 0.0" size="2000 2000"/>
+	<spawnpoint pos="0.0 187.90001 0.0"/>
+	<instance pos="1.2 181.00002 2.0" file="MOD/prefab/robodragon.xml"/>
+	<environment template="sunny" skybox="day.dds" fogParams="200 300 0.9 8"/>
+	<script file="MOD/scripts/drawClouds.lua"/>
+	<group name="entryPoint-Lee" pos="173.59998 58.5 -3.2" rot="0.0 -90.0 0.0">
+		<vox tags="nocull" file="MOD/vox/sky/leeFar.vox" scale="10"/>
+		<script file="MOD/scripts/skyEntry.lua" param0="map=1">
+			<trigger name="entryTrigger" tags="entryTrigger" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" type="box" size="50 100 50"/>
+		</script>
+	</group>
+	<group name="safteyNet" pos="173.60001 79.3 -3.2" rot="0.0 -90.0 0.0">
+		<script file="MOD/scripts/skyEntry.lua" param0="border=true">
+			<trigger name="entryTrigger" tags="entryTrigger" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" type="box" size="1000 200 1000"/>
+		</script>
+	</group>
+	<group name="entryPoint-Carib" pos="-175.89999 55.2 -294.79999" rot="0.0 -90.0 0.0">
+		<vox tags="nocull" file="MOD/vox/sky/caribFar.vox" scale="10"/>
+		<script file="MOD/scripts/skyEntry.lua" param0="map=8">
+			<trigger name="entryTrigger" tags="entryTrigger" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" type="box" size="50 100 50"/>
+		</script>
+	</group>
+	<group name="entryPoint-CaribHub" pos="-27.19998 56.4 -259.60001" rot="0.0 -90.0 0.0">
+		<vox tags="nocull" file="MOD/vox/sky/caribHubFar.vox" scale="10"/>
+		<script file="MOD/scripts/skyEntry.lua" param0="map=7">
+			<trigger name="entryTrigger" tags="entryTrigger" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" type="box" size="50 100 50"/>
+		</script>
+	</group>
+	<group name="entryPoint-Lab" pos="-196.7 58.5 229.60001" rot="0.0 -90.0 0.0">
+		<vox tags="nocull" file="MOD/vox/sky/labFar.vox" scale="10"/>
+		<script file="MOD/scripts/skyEntry.lua" param0="map=0">
+			<trigger name="entryTrigger" tags="entryTrigger" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" type="box" size="50 100 50"/>
+		</script>
+	</group>
+	<group name="entryPoint-Marina" pos="-223.00002 57.8 10.8" rot="0.0 0.0 0.0">
+		<vox tags="nocull" file="MOD/vox/sky/marinaFar.vox" scale="10"/>
+		<script file="MOD/scripts/skyEntry.lua" param0="map=2">
+			<trigger name="entryTrigger" tags="entryTrigger" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" type="box" size="50 100 50"/>
+		</script>
+	</group>
+	<group name="entryPoint-Woo" pos="-62.99999 58.1 -42.8" rot="0.0 -90.0 0.0">
+		<vox tags="nocull" file="MOD/vox/sky/wooFar.vox" scale="10"/>
+		<script file="MOD/scripts/skyEntry.lua" param0="map=3">
+			<trigger name="entryTrigger" tags="entryTrigger" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" type="box" size="50 100 50"/>
+		</script>
+	</group>
+	<group name="entryPoint-Mall" pos="-152.39998 57.7 -66.50001" rot="0.0 -180.0 0.0">
+		<vox tags="nocull" file="MOD/vox/sky/mallFar.vox" scale="10"/>
+		<script file="MOD/scripts/skyEntry.lua" param0="map=5">
+			<trigger name="entryTrigger" tags="entryTrigger" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" type="box" size="50 100 50"/>
+		</script>
+	</group>
+	<group name="entryPoint-Frustrum" pos="52.59999 58.1 -10.3" rot="0.0 -180.0 0.0">
+		<vox tags="nocull" file="MOD/vox/sky/frustrumFar.vox" scale="10"/>
+		<script file="MOD/scripts/skyEntry.lua" param0="map=6">
+			<trigger name="entryTrigger" tags="entryTrigger" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" type="box" size="50 100 50"/>
+		</script>
+	</group>
+	<group name="entryPoint-HollowRock" pos="-204.10001 58.1 108.3" rot="0.0 -90.0 0.0">
+		<vox tags="nocull" file="MOD/vox/sky/hollowrockFar.vox" scale="10"/>
+		<script file="MOD/scripts/skyEntry.lua" param0="map=4">
+			<trigger name="entryTrigger" tags="entryTrigger" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" type="box" size="50 100 50"/>
+		</script>
+	</group>
+	<group name="entryPoint-Factory" pos="56.0 53.6 -125.7" rot="0.0 90.0 0.0">
+		<vox tags="nocull" file="MOD/vox/sky/factoryFar.vox" scale="10"/>
+		<script file="MOD/scripts/skyEntry.lua" param0="map=9">
+			<trigger name="entryTrigger" tags="entryTrigger" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" type="box" size="50 100 50"/>
+		</script>
+	</group>
+	<group name="entryPoint-Cullington" pos="-8.1 57.6 71.0" rot="0.0 90.0 0.0">
+		<vox tags="nocull" file="MOD/vox/sky/cullingtonFar.vox" scale="10"/>
+		<script file="MOD/scripts/skyEntry.lua" param0="map=10">
+			<trigger name="entryTrigger" tags="entryTrigger" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" type="box" size="50 100 50"/>
+		</script>
+	</group>
+	<instance file="MOD/prefab/NOROBOTS.xml"/>
+	<instance file="MOD/prefab/NOLOOT.xml"/>
+</scene>
+

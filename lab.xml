@@ -1,0 +1,326 @@
+<scene version="1.4.0" shadowVolume="200 30 200">
+	<environment template="sunset" pos="0.0 0.0 -130.90001" constant="0 0 0" ambient="0.1" ambientexponent="50" sunLength="8"/>
+	<script pos="0.0 0.0 -130.90001" file="main.lua"/>
+	<script pos="0.0 0.0 -130.90001" file="sandbox.lua"/>
+	<spawnpoint pos="0.0 6.5 24.39999" rot="0 180 0"/>
+	<instance pos="0.0 4.6 50.99996" rot="0.0 0.0 0.0" file="MOD/prefab/TabletPrefab.xml"/>
+	<instance pos="-3.60001 2.2 49.39997" rot="0.0 0.0 0.0" file="MOD/prefab/robodragon.xml"/>
+	<group pos="0.0 0.0 38.59998">
+		<voxbox tags="unbreakable" pos="-27.7 0.0 -33.40001" rot="0.0 0.0 0.0" size="867 10 821" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete" material="rock" color="0.5 0.5 0.5">
+			<voxbox pos="78.90001 0.0 69.89999" rot="0.0 0.0 0.0" size="17 11 10" brush="hole"/>
+		</voxbox>
+		<voxbox tags="unbreakable" pos="34.6 0.4 16.59998" rot="0.0 0.0 0.0" size="234 23 84" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete" material="rock" color="0.5 0.5 0.5">
+			<voxbox pos="23.0 -0.2 -2.7" rot="0.0 -90.0 0.0" size="31 25 225" brush="MOD/map/assets/industrial/components.vox" object="stairs-industrial-metal"/>
+		</voxbox>
+		<voxbox tags="unbreakable" pos="-24.9 0.0 25.0" rot="-90.0 0.0 0.0" size="272 10 300" brush="MOD/map/wallGuts.vox" material="rock">
+			<voxbox pos="27.19999 1.0 1.0" rot="-90.0 -180.0 0.0" size="272 293 1" brush="MOD/map/assets/industrial/innerwalls.vox" object="plaster-white" material="rock"/>
+		</voxbox>
+		<voxbox tags="unbreakable" pos="2.3 16.7 25.0" rot="-90.0 0.0 0.0" size="226 10 133" brush="MOD/map/wallGuts.vox" material="rock">
+			<voxbox pos="22.19997 1.0 0.1" rot="-90.0 180.0 0.0" size="243 135 1" brush="MOD/map/assets/industrial/innerwalls.vox" object="plaster-white" material="rock"/>
+		</voxbox>
+		<voxbox tags="unbreakable" pos="-25.0 29.0 -25.0" rot="0.0 0.0 0.0" size="500 10 500" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete" material="rock" color="0.5 0.5 0.5"/>
+		<voxbox tags="unbreakable" pos="-25.0 0.0 -24.0" rot="-90.0 0.0 0.0" size="110 10 300" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete" material="rock"/>
+		<voxbox tags="unbreakable" pos="14.0 0.0 -24.0" rot="-90.0 0.0 0.0" size="110 10 300" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete" material="rock"/>
+		<voxbox tags="unbreakable" pos="-14.0 17.9 -24.0" rot="-90.0 0.0 0.0" size="280 13 110" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete" material="rock"/>
+		<voxbox tags="unbreakable" pos="24.0 0.0 -25.0" rot="-90.0 -90.0 0.0" size="330 10 300" brush="MOD/map/wallGuts.vox" material="rock">
+			<voxbox pos="32.99998 0.99999 1.0" rot="-90.0 -180.0 0.0" size="330 80 1" brush="MOD/map/assets/industrial/innerwalls.vox" object="plaster-cracked-beige_green" material="rock"/>
+			<voxbox pos="33.0 -0.1 1.0" rot="-90.0 -180.0 0.0" size="330 293 1" brush="MOD/map/assets/industrial/innerwalls.vox" object="plaster-white" material="rock"/>
+		</voxbox>
+		<voxbox tags="unbreakable" pos="24.0 8.8 8.0" rot="-90.0 -90.0 0.0" size="60 10 201" brush="MOD/map/wallGuts.vox" material="rock">
+			<voxbox pos="6.0 -0.1 -0.0" rot="-90.0 -180.0 0.0" size="60 206 1" brush="MOD/map/assets/industrial/innerwalls.vox" object="plaster-white" material="rock"/>
+		</voxbox>
+		<voxbox tags="unbreakable" pos="24.0 0.0 14.0" rot="-90.0 -90.0 0.0" size="110 10 300" brush="MOD/map/wallGuts.vox" material="rock">
+			<voxbox pos="10.99996 0.99999 1.0" rot="-90.0 -180.0 0.0" size="110 80 1" brush="MOD/map/assets/industrial/innerwalls.vox" object="plaster-cracked-beige_green" material="rock"/>
+			<voxbox pos="11.0 -0.1 1.0" rot="-90.0 -180.0 0.0" size="110 284 1" brush="MOD/map/assets/industrial/innerwalls.vox" object="plaster-white" material="rock"/>
+		</voxbox>
+		<voxbox tags="unbreakable" pos="33.6 0.0 -25.0" rot="-90.0 -90.0 0.0" size="330 10 100" brush="MOD/map/wallGuts.vox" material="rock">
+			<voxbox pos="33.0 -0.1 1.0" rot="-90.0 180.0 0.0" size="330 80 1" brush="MOD/map/assets/industrial/innerwalls.vox" object="plaster-cracked-beige_green" material="rock"/>
+			<voxbox pos="32.99998 0.99999 0.99999" rot="-90.0 -180.0 0.0" size="135 80 1" brush="MOD/map/assets/industrial/innerwalls.vox" object="plaster-cracked-beige_green" material="rock"/>
+		</voxbox>
+		<voxbox tags="unbreakable" pos="33.6 0.0 14.0" rot="-90.0 -90.0 0.0" size="110 10 100" brush="MOD/map/wallGuts.vox" material="rock">
+			<voxbox pos="10.99999 -0.10001 1.0" rot="-90.0 180.0 0.0" size="110 80 1" brush="MOD/map/assets/industrial/innerwalls.vox" object="plaster-cracked-beige_green" material="rock"/>
+			<voxbox pos="10.99999 0.99999 1.0" rot="-90.0 180.0 0.0" size="110 80 1" brush="MOD/map/assets/industrial/innerwalls.vox" object="plaster-cracked-beige_green" material="rock"/>
+		</voxbox>
+		<voxbox tags="unbreakable" pos="24.6 9.0 -32.2" rot="0.0 0.0 0.0" size="344 10 572" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete" material="rock" color="0.5 0.5 0.5"/>
+		<voxbox tags="unbreakable" pos="24.1 0.0 -24.8" rot="-90.0 0.0 0.0" size="348 10 100" brush="MOD/map/wallGuts.vox" material="rock">
+			<voxbox pos="10.29997 -0.1 1.0" rot="-90.0 180.0 0.0" size="103 80 1" brush="MOD/map/assets/industrial/innerwalls.vox" object="plaster-cracked-beige_green" material="rock"/>
+		</voxbox>
+		<voxbox tags="unbreakable" pos="33.6 0.0 -4.9" rot="-90.0 0.0 0.0" size="191 10 100" brush="MOD/map/wallGuts.vox" material="rock">
+			<voxbox pos="24.29997 -0.1 1.0" rot="-90.0 180.0 0.0" size="243 80 1" brush="MOD/map/assets/industrial/innerwalls.vox" object="plaster-cracked-beige_green" material="rock"/>
+		</voxbox>
+		<voxbox tags="unbreakable" pos="58.0 0.0 -25.7" rot="-90.0 -90.0 0.0" size="507 10 100" brush="MOD/map/wallGuts.vox" material="rock">
+			<voxbox pos="50.99995 -0.10001 0.99997" rot="-90.0 180.0 0.0" size="302 80 1" brush="MOD/map/assets/industrial/innerwalls.vox" object="plaster-cracked-beige_green" material="rock"/>
+		</voxbox>
+		<group name="lights" pos="29.6 8.7 15.8">
+			<instance pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -10.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -20.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -30.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -40.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+		</group>
+		<voxbox tags="unbreakable" pos="-24.9 0.0 -25.0" rot="-90.0 -90.0 0.0" size="330 10 300" brush="MOD/map/wallGuts.vox" material="rock">
+			<voxbox pos="33.0 1.0 1.0" rot="-90.0 -180.0 0.0" size="330 293 1" brush="MOD/map/assets/industrial/innerwalls.vox" object="plaster-white" material="rock"/>
+		</voxbox>
+		<voxbox tags="unbreakable" pos="-24.9 0.0 7.6" rot="-90.0 -90.0 0.0" size="174 10 300" brush="MOD/map/wallGuts.vox" material="rock">
+			<voxbox pos="16.89999 1.0 1.0" rot="-90.0 180.0 0.0" size="169 284 1" brush="MOD/map/assets/industrial/innerwalls.vox" object="plaster-white" material="rock"/>
+		</voxbox>
+	</group>
+	<group pos="0.0 8.5 -16.60002" rot="20.0 0.0 0.0">
+		<voxbox tags="unbreakable" pos="-15.0 0.0 -75.0" rot="0.0 0.0 0.0" size="300 10 1000" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete" material="rock" color="0.5 0.5 0.5"/>
+		<voxbox tags="unbreakable" pos="15.0 0.0 25.0" rot="-90.0 90.0 0.0" size="1000 10 200" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete" material="rock"/>
+		<voxbox tags="unbreakable" pos="-14.0 0.0 25.0" rot="-90.0 90.0 0.0" size="1000 10 200" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete" material="rock"/>
+		<voxbox tags="unbreakable" pos="-15.0 19.00008 -75.0" rot="0.0 0.0 0.0" size="300 10 1000" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete" material="rock" color="0.5 0.5 0.5"/>
+		<voxagon tags="unbreakable" pos="15.0 0.0 24.9" rot="-90.0 90.0 -20.0" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete" extrude="10">
+			<vertex pos="-6.9 0.0"/>
+			<vertex pos="0.1 0.0"/>
+			<vertex pos="-6.9 18.8"/>
+		</voxagon>
+		<voxagon tags="unbreakable" pos="-14.0 0.0 24.9" rot="-90.0 90.0 -20.0" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete" extrude="10">
+			<vertex pos="-6.9 0.0"/>
+			<vertex pos="0.1 0.0"/>
+			<vertex pos="-6.9 18.8"/>
+		</voxagon>
+		<group name="lights" pos="-7.0 18.7 20.60001" rot="0.0 0.0 0.0">
+			<instance pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -10.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -20.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -30.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -40.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+		</group>
+		<group name="lights" pos="7.0 18.7 20.6" rot="0.0 0.0 0.0">
+			<instance pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -10.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -20.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -30.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -40.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+		</group>
+		<group name="lights" pos="7.0 1.2 20.60001" rot="180.0 180.0 0.0">
+			<instance pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -10.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -20.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -30.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -40.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+		</group>
+		<group name="lights" pos="-7.00002 1.20001 20.60001" rot="180.0 180.0 0.0">
+			<instance pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -10.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -20.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -30.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -40.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+		</group>
+		<group name="lights" pos="-7.00002 1.19999 -32.99999" rot="-180.0 -180.0 0.0">
+			<instance pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -10.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -20.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -30.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -40.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+		</group>
+		<group name="lights" pos="-7.0 18.69998 -33.0" rot="0.0 0.0 0.0">
+			<instance pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -10.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -20.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -30.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -40.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+		</group>
+		<group name="lights" pos="7.0 18.69998 -33.0" rot="0.0 0.0 0.0">
+			<instance pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -10.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -20.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -30.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -40.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+		</group>
+		<group name="lights" pos="7.0 1.19998 -32.99999" rot="-180.0 -180.0 0.0">
+			<instance pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -10.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -20.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -30.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+			<instance pos="0.0 0.1 -40.0" rot="0.0 0.0 0.0" file="MOD/map/light.xml"/>
+		</group>
+	</group>
+	<group name="upgradeStation" pos="38.3 -7.0 67.6" rot="0.0 -90.0 0.0">
+		<script pos="8.0 2.9 -11.1" rot="0.0 180.0 0.0" file="MOD/scripts/upgradeStationV2Script.lua">
+			<body tags="dockBase ground" pos="0.0 5.0 0.0" dynamic="false">
+				<vox tags="unbreakable" pos="0.0 0.0 0.0" file="MOD/vox/upgradeStation.vox" object="&lt;baseplate&gt;">
+					<vox pos="0.0 2.5 0.0"/>
+				</vox>
+			</body>
+			<vox tags="unbreakable" pos="-0.0 5.5 1.9" file="MOD/vox/upgradeStation.vox" object="&lt;port-gaurd&gt;"/>
+			<vox tags="unbreakable dockPort ground" pos="0.0 3.1 2.7" prop="true" file="MOD/vox/upgradeStation.vox" object="&lt;data-port&gt;">
+				<joint tags="dockMotor" pos="0.0 1.9 0.0" rot="-90.0 0.0 0.0" type="prismatic" size="0.5" rotspring="1" limits="0 2"/>
+			</vox>
+			<trigger tags="dockTrigger" pos="0.0 6.9 0.0" size="4"/>
+			<trigger tags="resetTrigger" pos="0.0 6.9 0.0" size="20"/>
+		</script>
+		<group pos="4.0 0.0 0.0">
+			<vox tags="unbreakable" pos="-8.0 20.0 0.0" rot="0.0 0.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;wall&gt;"/>
+			<vox tags="unbreakable" pos="16.0 12.0 0.0" rot="0.0 -180.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;panel&gt;"/>
+			<vox tags="unbreakable" pos="-7.6 8.0 -0.0" rot="0.0 -180.0 0.0" file="MOD/vox/upgradeStation.vox" object="&lt;window&gt;"/>
+			<vox tags="unbreakable" pos="4.0 24.0 -0.0" rot="-180.0 0.0 0.0" file="MOD/vox/upgradeStation.vox" object="&lt;panel&gt;"/>
+			<vox tags="unbreakable" pos="16.00001 20.00002 0.0" rot="0.0 -180.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;wall&gt;"/>
+		</group>
+		<group pos="4.0 0.0 8.0">
+			<vox tags="unbreakable" pos="-8.0 20.0 0.0" rot="0.0 0.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;wall&gt;"/>
+			<vox tags="unbreakable" pos="16.0 12.0 0.0" rot="0.0 -180.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;panel&gt;"/>
+			<vox tags="unbreakable" pos="-8.0 11.9 0.0" rot="0.0 -180.0 90.0" file="MOD/vox/upgradeStation.vox" object="&lt;panel&gt;">
+				<voxbox pos="-3.9 0.0 -6.3" rot="0.0 0.0 0.0" size="154 8 23" color="0.29 0.27 0.26"/>
+			</vox>
+			<vox tags="unbreakable" pos="4.0 24.0 -0.0" rot="-180.0 0.0 0.0" file="MOD/vox/upgradeStation.vox" object="&lt;panel&gt;"/>
+			<vox tags="unbreakable" pos="16.00001 20.00002 0.0" rot="0.0 -180.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;wall&gt;"/>
+		</group>
+		<group pos="4.0 0.0 16.0">
+			<vox tags="unbreakable" pos="16.0 12.0 0.0" rot="0.0 -180.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;panel&gt;"/>
+			<vox tags="unbreakable" pos="4.0 24.0 -0.0" rot="-180.0 0.0 0.0" file="MOD/vox/upgradeStation.vox" object="&lt;panel&gt;"/>
+			<vox tags="unbreakable" pos="16.00001 20.00002 0.0" rot="0.0 -180.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;wall&gt;"/>
+		</group>
+		<group pos="4.0 0.0 24.0">
+			<vox tags="unbreakable" pos="16.0 12.0 0.0" rot="0.0 -180.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;panel&gt;"/>
+			<vox tags="unbreakable" pos="4.0 24.0 -0.0" rot="-180.0 0.0 0.0" file="MOD/vox/upgradeStation.vox" object="&lt;panel&gt;"/>
+			<vox tags="unbreakable" pos="16.00001 20.00002 0.0" rot="0.0 -180.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;wall&gt;"/>
+		</group>
+		<group pos="4.0 0.0 32.0">
+			<vox tags="unbreakable" pos="16.0 12.0 0.0" rot="0.0 -180.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;panel&gt;"/>
+			<vox tags="unbreakable" pos="4.0 24.0 -0.0" rot="-180.0 0.0 0.0" file="MOD/vox/upgradeStation.vox" object="&lt;panel&gt;"/>
+			<vox tags="unbreakable" pos="16.00001 20.00002 0.0" rot="0.0 -180.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;wall&gt;"/>
+		</group>
+		<group pos="4.0 0.0 -8.0">
+			<vox tags="unbreakable" pos="-8.0 20.0 0.0" rot="0.0 0.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;wall&gt;"/>
+			<vox tags="unbreakable" pos="16.0 12.0 0.0" rot="0.0 -180.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;panel&gt;"/>
+			<vox tags="unbreakable" pos="-7.6 8.0 -0.0" rot="0.0 -180.0 0.0" file="MOD/vox/upgradeStation.vox" object="&lt;window&gt;"/>
+			<vox tags="unbreakable" pos="4.0 24.0 -0.0" rot="-180.0 0.0 0.0" file="MOD/vox/upgradeStation.vox" object="&lt;panel&gt;"/>
+			<vox tags="unbreakable" pos="16.00001 20.00002 0.0" rot="0.0 -180.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;wall&gt;"/>
+		</group>
+		<group pos="4.0 0.0 -16.0">
+			<vox tags="unbreakable" pos="-8.0 20.0 0.0" rot="0.0 0.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;wall&gt;"/>
+			<vox tags="unbreakable" pos="16.0 12.0 0.0" rot="0.0 -180.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;panel&gt;"/>
+			<vox tags="unbreakable" pos="-7.6 8.0 -0.0" rot="0.0 -180.0 0.0" file="MOD/vox/upgradeStation.vox" object="&lt;window&gt;"/>
+			<vox tags="unbreakable" pos="4.0 24.0 -0.0" rot="-180.0 0.0 0.0" file="MOD/vox/upgradeStation.vox" object="&lt;panel&gt;"/>
+			<vox tags="unbreakable" pos="16.00001 20.00002 0.0" rot="0.0 -180.0 -90.0" file="MOD/vox/upgradeStation.vox" object="&lt;wall&gt;"/>
+		</group>
+		<voxbox tags="unbreakable" pos="-4.0 8.0 -20.4" rot="0.0 0.0 0.0" size="240 160 4" color="0.29 0.27 0.26"/>
+		<voxbox tags="unbreakable" pos="-4.0 8.0 36.0" rot="0.0 0.0 0.0" size="240 160 4" color="0.29 0.27 0.26"/>
+		<voxbox tags="unbreakable" pos="-4.0 24.0 12.0" rot="90.0 0.0 0.0" size="81 240 4" color="0.29 0.27 0.26"/>
+		<light pos="8.0 16.0 0.0" color="1.0 0.78 0.0" scale="10" size="1" reach="30"/>
+	</group>
+	<group name="upgrade-computers" pos="46.4 2.7 62.29998" rot="0.0 180.0 0.0">
+		<vox tags="upgradeTerminal interact=upgrade unbreakable" file="MOD/vox/upgradeStation.vox" object="&lt;upgrade-terminal-v2&gt;">
+			<screen tags="upgradeScreen" pos="0.0 2.0 -0.85" rot="0.0 0.0 0.0" size="0.8 0.6" bulge="0" resolution="320 240" script="MOD/scripts/upgradeStationV2ScreenScript.lua" enabled="true" interactive="true"/>
+		</vox>
+		<script pos="-0.4 -1.7 47.5" file="MOD/scripts/reset.lua">
+			<vox tags="unbreakable" pos="0.0 0.0 -0.1" rot="0.0 180.0 0.0" file="MOD/vox/upgradeStation.vox" object="&lt;reset-terminal-v2&gt;">
+				<voxbox tags="unbreakable interact=RESET resetButton" pos="-0.1 1.6 -0.7" rot="0.0 0.0 0.0" size="2 1 2" color="1 0 0"/>
+			</vox>
+		</script>
+		<voxbox pos="-0.9 0.7 0.0" rot="0.0 -180.0 0.0" size="56 4 7" brush="MOD/vox/upgradeStation.vox" object="&lt;control-panels&gt;" offset="-1 0 0"/>
+		<voxbox pos="-0.9 0.0 0.0" rot="0.0 -180.0 0.0" size="56 7 7" brush="MOD/vox/upgradeStation.vox" object="&lt;control-panels-base&gt;" offset="-1 0 0"/>
+		<voxbox pos="6.5 0.0 -0.0" rot="0.0 -180.0 0.0" size="56 7 7" brush="MOD/vox/upgradeStation.vox" object="&lt;control-panels-base&gt;"/>
+		<voxbox pos="6.5 0.7 0.0" rot="0.0 -180.0 0.0" size="56 4 7" brush="MOD/vox/upgradeStation.vox" object="&lt;control-panels&gt;"/>
+	</group>
+	<light pos="45.2 5.7 26.9" color="1 0 0" scale="100"/>
+	<light pos="55.5 4.5 33.3" type="area" color="1 0 0" scale="1" size="5 8" reach="0" fogscale="5"/>
+	<group name="water" pos="-8.5 18.0 0.1">
+		<water pos="8.5 10.0 -165.60001" size="500 170"/>
+		<water pos="8.5 10.0 172.7" size="500 150"/>
+		<water pos="179.00002 10.0 -0.6" rot="0.0 90.0 0.0" size="500 150"/>
+		<water pos="-165.7 10.0 -0.6" rot="0.0 90.0 0.0" size="500 150"/>
+	</group>
+	<instance pos="0.0 -0.2 0.0" rot="0.0 0.0 0.0" file="MOD/prefab/NOLOOT.xml"/>
+	<vox pos="12.9 17.7 62.5" rot="90.0 180.0 0.0" file="MOD/vox/signs/upgradeChamber.vox" scale="2"/>
+	<vox pos="33.5 3.7 55.4" rot="90.0 -90.0 0.0" file="MOD/vox/signs/upgradeLab.vox"/>
+	<vox pos="25.1 3.7 55.4" rot="90.0 90.0 0.0" file="MOD/vox/signs/mechHangar.vox"/>
+	<instance pos="0.0 -0.2 0.0" rot="0.0 0.0 0.0" file="MOD/prefab/NOROBOTS.xml"/>
+	<group name="portals" pos="29.4 1.0 15.4">
+		<group name="instance=MOD/prefab/portal.xml" pos="-2.7 0.0 -0.1" rot="0.0 -180.0 0.0">
+			<script pos="0.0 0.0 -0.1" file="MOD/scripts/portalScript.lua" param0="dest=0">
+				<vox tags="unbreakable" pos="0.0 0.0 0.1" file="MOD/vox/portal.vox"/>
+				<trigger tags="portalTrigger" pos="0.0 0.2 0.0" type="box" size="1 3 1"/>
+			</script>
+		</group>
+		<group name="instance=MOD/prefab/portal.xml" pos="2.6 0.0 -0.1" rot="0.0 -180.0 0.0">
+			<script pos="0.0 0.0 -0.1" file="MOD/scripts/portalScript.lua" param0="dest=1">
+				<vox tags="unbreakable" pos="0.0 0.0 0.1" file="MOD/vox/portal.vox"/>
+				<trigger tags="portalTrigger" pos="0.0 0.2 0.0" type="box" size="1 3 1"/>
+			</script>
+		</group>
+		<vox pos="-3.2 4.2 -0.0" rot="0.0 -90.0 0.0" file="tool/sledge.vox" scale="0.5"/>
+		<vox pos="2.6 3.6 0.0" rot="0.0 0.0 0.0" file="MOD/robot/mech-guns.vox" scale="0.5"/>
+	</group>
+	<group>
+		<voxbox tags="unbreakable" pos="14.0 -3.6 -79.9" rot="-90.0 0.0 0.0" collide="true" prop="false" size="863 75 566" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete"/>
+		<voxbox tags="unbreakable" pos="-100.0 -3.6 100.1" rot="-90.0 0.0 0.0" collide="true" prop="false" size="2003 75 566" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete"/>
+		<voxbox tags="unbreakable" pos="92.9 -3.6 -87.4" rot="-90.0 -90.0 0.0" collide="true" prop="false" size="1875 75 566" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete"/>
+		<voxbox tags="unbreakable" pos="-100.39999 -3.6 -87.4" rot="-90.0 -90.0 0.0" collide="true" prop="false" size="1875 75 566" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete"/>
+		<voxbox tags="unbreakable" pos="-100.4 -3.6 -79.9" rot="-90.0 0.0 0.0" collide="true" prop="false" size="864 75 566" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete"/>
+		<voxbox tags="unbreakable" pos="-14.0 -3.6 -86.6" rot="-90.0 0.0 0.0" collide="true" prop="false" size="280 1256 377" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete"/>
+		<voxbox tags="unbreakable" pos="-14.0 32.3 -86.6" rot="-90.0 0.0 0.0" collide="true" prop="false" size="280 1256 28" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete" color="0.5 0.5 0.5"/>
+		<voxbox tags="unbreakable" pos="-100.4 52.9 -87.4" rot="0.0 0.0 0.0" size="2008 82 1875" brush="MOD/map/assets/industrial/innerfloors.vox" object="concrete" material="rock"/>
+	</group>
+	<group name="solar" pos="70.8 60.2 6.1">
+		<group pos="15.0 0.0 52.6">
+			<instance pos="0.0 1.0 0.00001" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 0.00001" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="0.0 1.0 15.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="0.0 1.0 30.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 15.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 30.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+		</group>
+		<group pos="15.0 0.0 -82.39999">
+			<instance pos="0.0 1.0 0.00001" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 0.00001" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="0.0 1.0 15.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="0.0 1.0 30.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 15.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 30.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+		</group>
+		<group pos="15.0 0.0 -37.4">
+			<instance pos="0.0 1.0 0.00001" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 0.00001" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="0.0 1.0 15.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="0.0 1.0 30.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 15.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 30.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+		</group>
+		<group pos="15.0 0.0 7.6">
+			<instance pos="0.0 1.0 0.00001" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 0.00001" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="0.0 1.0 15.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="0.0 1.0 30.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 15.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 30.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+		</group>
+	</group>
+	<group name="solar" pos="-70.8 60.2 6.1">
+		<group pos="15.0 0.0 52.6">
+			<instance pos="0.0 1.0 0.00001" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 0.00001" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="0.0 1.0 15.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="0.0 1.0 30.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 15.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 30.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+		</group>
+		<group pos="15.0 0.0 -82.39999">
+			<instance pos="0.0 1.0 0.00001" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 0.00001" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="0.0 1.0 15.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="0.0 1.0 30.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 15.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 30.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+		</group>
+		<group pos="15.0 0.0 -37.4">
+			<instance pos="0.0 1.0 0.00001" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 0.00001" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="0.0 1.0 15.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="0.0 1.0 30.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 15.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 30.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+		</group>
+		<group pos="15.0 0.0 7.6">
+			<instance pos="0.0 1.0 0.00001" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 0.00001" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="0.0 1.0 15.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="0.0 1.0 30.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 15.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+			<instance pos="-30.0 1.0 30.0" rot="0.0 0.0 0.0" file="MOD/map/solarArray.xml"/>
+		</group>
+	</group>
+</scene>
+
